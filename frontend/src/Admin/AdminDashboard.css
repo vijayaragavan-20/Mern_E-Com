@@ -1,0 +1,162 @@
+/* 🌈 Base container */
+.admin-dashboard {
+  max-width: 1280px;
+  margin: 40px auto;
+  padding: 32px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #041e44, #c3cfe2);
+  border-radius: 24px;
+  box-shadow: 0 12px 48px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 0.8s ease;
+}
+
+/* 🧠 Headings */
+.admin-dashboard h2 {
+  font-size: 36px;
+  font-weight: 800;
+  margin-bottom: 30px;
+  color: #ec7709;
+  text-shadow: 1px 1px 1px rgba(15, 180, 89, 0.05);
+}
+
+/* 🎯 Form panel */
+form {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  background: rgba(177, 177, 177, 0.85);
+  backdrop-filter: blur(10px);
+  padding: 24px;
+  border-radius: 20px;
+  box-shadow: 0 8px 24px rgba(235, 2, 2, 0.08);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+form:hover {
+  transform: scale(1.01);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+form input[type="text"],
+form input[type="number"],
+form textarea,
+form select {
+  width: 100%;
+  padding: 12px 14px;
+  font-size: 15px;
+  border: 1px solid #dcdde1;
+  border-radius: 12px;
+  background: #f9f9f9;
+  transition: all 0.3s ease;
+}
+
+form input:focus,
+form textarea:focus,
+form select:focus {
+  outline: none;
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.5);
+  border-color: #007bff;
+}
+
+form label {
+  font-weight: 600;
+  font-size: 14px;
+  color: #2c3e50;
+}
+
+form input[type="checkbox"] {
+  margin-right: 8px;
+  transform: scale(1.2);
+}
+
+/* 💾 Button styles */
+form button {
+  grid-column: span 2;
+  padding: 14px 24px;
+  background: linear-gradient(to right, #6a11cb, #2575fc);
+  color: #fff;
+  font-weight: bold;
+  font-size: 16px;
+  border: none;
+  border-radius: 14px;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+form button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(106, 17, 203, 0.4);
+}
+
+/* 📊 Table Section */
+h3 {
+  margin-top: 40px;
+  font-size: 26px;
+  color: #273c75;
+  font-weight: 700;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 16px;
+  background: white;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+  animation: popIn 0.5s ease;
+}
+
+table th,
+table td {
+  padding: 14px 20px;
+  text-align: left;
+  border-bottom: 1px solid #ecf0f1;
+}
+
+table th {
+  background-color: #f1f2f6;
+  color: #34495e;
+  font-weight: 700;
+}
+
+table tr:hover {
+  background-color: #f0f9ff;
+  transition: 0.2s ease-in-out;
+}
+
+table td button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 6px;
+  transition: all 0.2s ease-in-out;
+  border-radius: 8px;
+}
+
+table td button:hover {
+  background-color: rgba(0, 123, 255, 0.1);
+  transform: scale(1.2);
+}
+
+/* 🔮 Animation Keyframes */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes popIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}

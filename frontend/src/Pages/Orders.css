@@ -1,0 +1,138 @@
+.orders-page {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .orders-page h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #232f3e;
+  }
+  
+  .no-orders {
+    font-size: 18px;
+    text-align: center;
+    color: #555;
+  }
+  
+  .order-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    margin-bottom: 25px;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  }
+  
+  .order-card h3 {
+    color: #111;
+    margin-bottom: 10px;
+  }
+  
+  .order-card p {
+    margin: 4px 0;
+    color: #333;
+  }
+  
+  .order-items {
+    margin-top: 20px;
+    border-top: 1px solid #ddd;
+    padding-top: 20px;
+  }
+  
+  .order-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 15px;
+  }
+  
+  .order-item img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-right: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .order-item h4 {
+    font-size: 18px;
+    margin-bottom: 6px;
+    color: #232f3e;
+  }
+  
+  .order-item p {
+    font-size: 14px;
+    margin: 2px 0;
+    color: #333;
+  }
+  
+  .cancel-product-btn {
+    margin-left: auto;
+    background: #f08804;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 13px;
+  }
+  
+  .cancel-product-btn:hover {
+    background: #d97706;
+  }
+  
+  .cancel-order-btn {
+    margin-top: 15px;
+    background: #d9534f;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 14px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .cancel-order-btn:hover {
+    background: #c9302c;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .order-item {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .order-item img {
+      margin-bottom: 10px;
+    }
+  
+    .cancel-product-btn {
+      margin: 10px 0 0 0;
+    }
+  }
+  .order-status {
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 12px;
+    margin-left: 10px;
+    color: white;
+  }
+  
+  .order-status.delivered {
+    background: #28a745;
+  }
+  
+  .order-status.pending {
+    background: #ffc107;
+  }
+  
+  .order-status.cancelled {
+    background: #dc3545;
+  }
+  

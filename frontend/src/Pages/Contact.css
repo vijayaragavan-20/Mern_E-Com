@@ -1,0 +1,45 @@
+.contact-container {
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.contact-heading {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.contact-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: space-between;
+}
+
+.form-section,
+.info-section {
+  flex: 1 1 45%;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.submit-btn {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.social-media a {
+  display: inline-block;
+  margin-right: 15px;
+  color: #333;
+}
+
+.map-container {
+  margin-top: 20px;
+}

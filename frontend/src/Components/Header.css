@@ -1,0 +1,21 @@
+/* src/admin/components/Header.css */
+
+.admin-header {
+    background-color: #fff;
+    padding: 15px 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logout-button {
+    padding: 8px 16px;
+    background-color: #e74c3c;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  

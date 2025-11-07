@@ -1,0 +1,149 @@
+Wishlist.css
+
+.wishlist-page {
+  padding: 2rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f7f7f7;
+  min-height: 100vh;
+}
+
+.wishlist-header-bar {
+  text-align: center;
+  margin-bottom: 2rem;
+
+}
+
+.wishlist-header-bar h2 {
+  font-size: 2rem;
+}
+
+/* .empty-text {
+  text-align: center;
+  color: #8b0a0a;
+  font-size: 1.2rem;
+  margin-top: 3rem;
+} */
+
+.wishlist-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+}
+
+.wishlist-card {
+  background: #42636d;
+  padding: 1.2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(19, 185, 3, 0.06);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.2s;
+}
+
+.wishlist-card:hover {
+  transform: translateY(-5px);
+}
+
+.wishlist-top {
+  position: relative;
+  width: 100%;
+  text-align: center;
+}
+
+.wishlist-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 1.5rem;
+  color: #0f0b0c;
+  cursor: pointer;
+}
+
+.wishlist-card img {
+  width: 100%;
+  height: auto;
+  max-height: 180px;
+  object-fit: contain;
+  margin-bottom: 1rem;
+}
+
+h4 {
+  margin: 0.5rem 0;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.wishlist-price {
+  color: #1d3557;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.product-rating {
+  color: #ffb703;
+  font-size: 1rem;
+  margin-bottom: 0.8rem;
+}
+
+.wishlist-quantity {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-bottom: 1rem;
+}
+
+.wishlist-quantity button {
+  background-color: #f1f1f1;
+  border: none;
+  padding: 6px 12px;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.wishlist-quantity button:hover:not(:disabled) {
+  background-color: #ddd;
+}
+
+.wishlist-quantity span {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.wishlist-actions {
+  display: flex;
+  gap: 0.6rem;
+  justify-content: center;
+  margin-top: auto;
+}
+
+.btn-buy {
+  background-color: #2a9d8f;
+  color: #fff;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.btn-buy:hover {
+  background-color: #21867a;
+}
+
+.remove-btn {
+  background-color: #e63946;
+  color: #fff;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.remove-btn:hover {
+  background-color: #c12738;
+}

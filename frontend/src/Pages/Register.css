@@ -1,0 +1,109 @@
+/* Register.css */
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 50px 80px;
+  min-height: 100vh;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  background-color: #1e3138;
+  padding: 30px;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 450px;
+  box-sizing: border-box;
+}
+
+.login-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+  color: #000000;
+}
+
+.login-form input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #000000;
+  border-radius: 4px;
+  font-size: 1rem;
+  color: #000000;
+  background-color: #fff;
+  transition: border-color 0.3s ease;
+}
+
+.login-form input:focus {
+  outline: none;
+  border-color: #000000;
+}
+
+.login-form input::placeholder {
+  color: #bbb;
+  font-size: 14px;
+  font-style: italic;
+}
+
+.login-form button {
+  width: 100%;
+  padding: 14px;
+  margin-top: 8px;
+  background: linear-gradient(90deg, #8e2de2, #4a00e0);
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-form button:hover {
+  background-color: #2a6cd0;
+}
+
+.login-form .redirect-link {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.login-form .redirect-link a {
+  color: #3f8efc;
+  text-decoration: none;
+}
+
+.login-form .redirect-link a:hover {
+  text-decoration: underline;
+}
+
+/* Custom style for form method (to be added by React component) */
+.login-form form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.login-form form input[type="submit"] {
+  background: linear-gradient(90deg, #8e2de2, #4a00e0);
+  padding: 14px;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 1.1rem;
+  cursor: pointer;
+  border: none;
+  width: 100%;
+  transition: background-color 0.3s ease;
+}
+
+.login-form form input[type="submit"]:hover {
+  background-color: #2a6cd0;
+}

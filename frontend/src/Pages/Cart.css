@@ -1,0 +1,149 @@
+/* Cart.css */
+
+.cart-page {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cart-heading {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #232f3e;
+}
+
+.empty-text {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #777;
+  margin-top: 50px;
+}
+
+.cart-items {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  align-items: center; /* Center the items horizontally */
+}
+
+.cart-item {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  align-items: center;
+  background-color: #fafafa;
+  transition: box-shadow 0.2s ease;
+  width: 90%; /* Ensure it is not too wide on large screens */
+  max-width: 900px; /* Limit the max width for better layout */
+  box-sizing: border-box;
+}
+
+.cart-item:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.cart-image {
+  width: 120px;
+  height: auto;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+.item-details {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.item-details h4 {
+  margin: 0 0 8px;
+  font-size: 1.1rem;
+  color: #111;
+}
+
+.price {
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #b12704;
+}
+
+.quantity-controls {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.quantity-controls button {
+  width: 28px;
+  height: 28px;
+  font-size: 1.2rem;
+  background-color: #f0f2f2;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.quantity-controls button:hover {
+  background-color: #ddd;
+}
+
+.quantity-controls span {
+  min-width: 20px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.remove-btn {
+  background-color: #801c1c;
+  width: 100px;
+}
+
+.remove-btn:hover {
+  background-color: #d9363e;
+}
+
+.total-price {
+  text-align: right;
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #111;
+  margin-top: 30px;
+  width: 100%;
+  max-width: 900px; /* Align with cart item width */
+}
+
+.buy-all-container {
+  text-align: center;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.buy-all-btn {
+  background-color: #ffa41c;
+  color: #111;
+  border: none;
+  padding: 12px 24px;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
+  max-width: 300px;
+}
+
+.buy-all-btn:hover {
+  background-color: #f08804;
+}
